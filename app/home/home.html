@@ -1675,20 +1675,29 @@
     <!-- ------------------ -->
 
     <div id="footer" class="ui segment">
-
+        <div>
         <span ng-show="web3.eth.defaultAccount">
                 User ETH account detected:&nbsp;&nbsp;
                 <a ng-href="{{currentNetwork.etherscanLinkPrefix}}address/{{web3.eth.defaultAccount}}" target="_blank">
                     {{web3.eth.defaultAccount}}
                 </a>
          </span>
-        <br>
-        Network ID:&nbsp{{currentNetwork.network_id}}&nbsp(
-        <a ng-href="{{currentNetwork.etherscanLinkPrefix}}" target="_blank">{{currentNetwork.networkName}}</a>)<br>
-        <a href="https://github.com/ethereum/web3.js" target="_blank">web3.js</a> ver.: {{web3.version}}
+        </div>
+        <div>
+            Network ID:&nbsp{{currentNetwork.network_id}}&nbsp(
+            <a ng-href="{{currentNetwork.etherscanLinkPrefix}}" target="_blank">{{currentNetwork.networkName}}</a>)<br>
+        </div>
+        <div>
+            <a href="https://github.com/ethereum/web3.js" target="_blank">web3.js</a> ver.: {{web3.version}}
+        </div>
         <div class="line"></div>
         Webapp last changed on:&nbsp; {{webAppLastChange}}, ver. {{webAppVersion}}
-        <br>
+
+        <a href="https://github.com/cryptoshares-inc" title="Github" target="_blank"
+           style="position: absolute; right: 1em">
+            <i class="ui github icon socialLogo"></i>
+        </a>&nbsp;&nbsp;
+
     </div>
     <br>
 
