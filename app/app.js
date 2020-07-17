@@ -51,7 +51,8 @@
 
             // console.log("application started");
             $rootScope.webAppVersion = "1.1.0";
-            $rootScope.webAppLastChange = "2020-07-15";
+            $rootScope.webAppLastChange = "2020-07-17";
+            $rootScope.supportEmailAddress = "cryptoshares@cryptoshares.app";
             $rootScope.production = false;
             $rootScope.devModeOn = false;
             // $rootScope.devModeOn = true;
